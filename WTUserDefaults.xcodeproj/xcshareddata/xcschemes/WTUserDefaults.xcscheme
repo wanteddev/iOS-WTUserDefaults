@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0830"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "915E58B51F15CECF006DE437"
+               BuildableName = "WTUserDefaults.framework"
+               BlueprintName = "WTUserDefaults"
+               ReferencedContainer = "container:WTUserDefaults.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "915E58BE1F15CECF006DE437"
+               BuildableName = "WTUserDefaultsTests.xctest"
+               BlueprintName = "WTUserDefaultsTests"
+               ReferencedContainer = "container:WTUserDefaults.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "915E58B51F15CECF006DE437"
+            BuildableName = "WTUserDefaults.framework"
+            BlueprintName = "WTUserDefaults"
+            ReferencedContainer = "container:WTUserDefaults.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "SUPPORTED_PLATFORMS=&quot;iphoneos iphonesimulator&quot;&#10;PROJECT_NAME=&quot;WTUserDefaults&quot;&#10;CONFIGURATION=&quot;Release&quot;&#10;#CONFIGURATION=&quot;Debug&quot;&#10;CURRENT_WORKING_DIR=`pwd`&#10;BUILD_DIR=&quot;${CURRENT_WORKING_DIR}/build&quot;&#10;&#10;for PLATFORM in $SUPPORTED_PLATFORMS; do&#10;xcodebuild -target &quot;${PROJECT_NAME}&quot; -configuration &quot;${CONFIGURATION}&quot; -sdk &quot;${PLATFORM}&quot; \&#10;ENABLE_BITCODE=YES ONLY_ACTIVE_ARCH=NO BUILD_DIR=&quot;${BUILD_DIR}&quot; CODE_SIGN_IDENTITY=&quot;&quot; CODE_SIGNING_REQUIRED=NO clean build&#10;done&#10;&#10;cp -R &quot;${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework&quot; &quot;${BUILD_DIR}/&quot;&#10;&#10;lipo -create -output &quot;${BUILD_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}&quot; \&#10;&quot;${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}&quot; \&#10;&quot;${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}&quot;&#10;&#10;echo &quot;Fat Framework Built : ${BUILD_DIR}/${PROJECT_NAME}.framework&quot;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "915E58B51F15CECF006DE437"
+            BuildableName = "WTUserDefaults.framework"
+            BlueprintName = "WTUserDefaults"
+            ReferencedContainer = "container:WTUserDefaults.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "915E58B51F15CECF006DE437"
+            BuildableName = "WTUserDefaults.framework"
+            BlueprintName = "WTUserDefaults"
+            ReferencedContainer = "container:WTUserDefaults.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Debug"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
