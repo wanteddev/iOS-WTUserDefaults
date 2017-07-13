@@ -12,6 +12,8 @@
 		915E58C71F15CECF006DE437 /* WTUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 915E58B91F15CECF006DE437 /* WTUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		915E58D21F15CF0C006DE437 /* WTUserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E58D01F15CF0C006DE437 /* WTUserDefaultsHelper.swift */; };
 		915E58D31F15CF0C006DE437 /* WTUserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E58D11F15CF0C006DE437 /* WTUserDefaultsProtocol.swift */; };
+		916D82CE1F1709B80073B593 /* WTUserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E58D01F15CF0C006DE437 /* WTUserDefaultsHelper.swift */; };
+		916D82CF1F1709B80073B593 /* WTUserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E58D11F15CF0C006DE437 /* WTUserDefaultsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916D82CE1F1709B80073B593 /* WTUserDefaultsHelper.swift in Sources */,
+				916D82CF1F1709B80073B593 /* WTUserDefaultsProtocol.swift in Sources */,
 				915E58C51F15CECF006DE437 /* WTUserDefaultsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +342,7 @@
 		915E58CB1F15CECF006DE437 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -365,6 +370,7 @@
 		915E58CC1F15CECF006DE437 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

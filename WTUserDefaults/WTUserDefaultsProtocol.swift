@@ -14,6 +14,6 @@ public protocol WTUserDefaultsProtocol {
     func getBool(forKey: String) -> Bool
     func getInteger(forKey: String) -> Int
     func getObject(forKey: String) -> Any?
-    func array(forKey: String) -> [Any]?
+    func getArray(forKey: String) -> [Any]?
     func set(_ value:Any, forKey: String)
 }

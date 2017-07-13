@@ -36,7 +36,7 @@ public class WTUserDefaultsHelper : WTUserDefaultsProtocol {
         return userDefaults.object(forKey:forKey)
     }
     
-    public func array(forKey:String) -> [Any]? {
+    public func getArray(forKey:String) -> [Any]? {
         return userDefaults.array(forKey: forKey)
     }
     
