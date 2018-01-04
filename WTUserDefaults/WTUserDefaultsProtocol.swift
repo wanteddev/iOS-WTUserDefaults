@@ -16,4 +16,5 @@ public protocol WTUserDefaultsProtocol {
     func getObject(forKey: String) -> Any?
     func getArray(forKey: String) -> [Any]?
     func set(_ value:Any, forKey: String)
+    func synchronize()
 }

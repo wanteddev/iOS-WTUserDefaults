@@ -43,4 +43,8 @@ public class WTUserDefaultsHelper : WTUserDefaultsProtocol {
     public func set(_ value:Any, forKey:String) {
         userDefaults.set(value, forKey:forKey)
     }
+    
+    public func synchronize() {
+        userDefaults.synchronize()
+    }
 }
