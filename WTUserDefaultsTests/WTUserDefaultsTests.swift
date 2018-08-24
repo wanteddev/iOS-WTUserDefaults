@@ -87,7 +87,16 @@ class WTUserDefaultsTests: XCTestCase {
         ret = defaults.getArray(forKey: stringKey) as? [String]
         XCTAssert(4 == ret?.count)
         XCTAssert("!@#" == ret?[3])
-        
+    }
+    
+    func testRemoveObject() {
+        guard let defaults = userDefaults else { return }
+        let stringKey = "ABC", value = "Value"
+        defaults.set(value, forKey: stringKey)
+        guard let ret = defaults.getObject(forKey: stringKey) as? String else { return XCTFail() }
+        XCTAssert(ret == value)
+        userDefaults?.removeObject(forKey: stringKey)
+        guard nil == defaults.getObject(forKey: stringKey) as? String else { return XCTFail() }
     }
     
 }

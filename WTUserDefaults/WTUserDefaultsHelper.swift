@@ -47,4 +47,8 @@ public class WTUserDefaultsHelper : WTUserDefaultsProtocol {
     public func synchronize() {
         userDefaults.synchronize()
     }
+    
+    public func removeObject(forKey key: String) {
+        userDefaults.removeObject(forKey: key)
+    }
 }
